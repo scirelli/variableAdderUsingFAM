@@ -1,0 +1,27 @@
+copy whole program into one long array.
+get rid of all white space
+search string for you ints bools etc.
+example:	
+    when you get to an i get next two chars and string compare them to int
+    if they match get the next word up to a ( or , or ; if its a bracket ( skip all chars
+    until u get to the ) bracket.  if its a , u know there are more ints after it until
+    u get to a ; so just add the ,'s 
+you can do this through the whole string using something like swtich statements.
+
+for the array u can dinamicly allocate space using the new operator (i think)
+if not create a static size of 1000 or something. 
+
+
+int
+long int
+short int
+flaot
+double
+char
+string
+int[]
+char[]
+bool
+
+
+sizeof(int) 

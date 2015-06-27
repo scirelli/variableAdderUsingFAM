@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Variable adder using FA M - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP52F6.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Variable adder using FA M.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\My Documents\Visual Studio Projects\Variable adder using FA M\Getinput.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP52F6.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP52F7.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Variable adder using FA M.pdb" /debug /machine:I386 /out:"Debug/Variable adder using FA M.exe" /pdbtype:sept 
+".\Debug\Check for Variable.obj"
+".\Debug\Getinput.obj"
+".\Debug\Intro.obj"
+".\Debug\Output.obj"
+".\Debug\TestForBool.obj"
+".\Debug\TestForChar.obj"
+".\Debug\TestForDouble.obj"
+".\Debug\TestForFloat.obj"
+".\Debug\TestForIntegers.obj"
+".\Debug\VariableAdder.obj"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP52F7.TMP"
+<h3>Output Window</h3>
+Compiling...
+Getinput.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Variable adder using FA M.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

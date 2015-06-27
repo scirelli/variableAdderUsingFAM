@@ -1,0 +1,178 @@
+// this program rocks int k;
+/* int k; int y; are all dumbie variables */
+
+cout<< "int in program are"; //error here it adds this an int
+
+
+int n,m,n,j;
+
+int k=0;
+
+int main(int j, int m, bool l)
+{
+	int k;
+	bool hi;
+	float bye;
+	cout<< " /* hi";
+}
+#include<iostream>
+using namespace std;
+
+int main() {
+	//---- get total inches from user
+	cout << "Please enter the total inches: ";
+	int totalInches;
+	cin >> totalInches;
+
+	//---- set up converstion constants
+	const int INCHES_PER_FOOT = 12 ;
+	const int FEET_PER_YARD = 3 ;
+
+	//---- determine total feet and remaining inches
+	int feet = totalInches / INCHES_PER_FOOT ;
+	int inches = totalInches % INCHES_PER_FOOT ;
+
+	//---- determine yards and remaining feet
+	int yards = feet / FEET_PER_YARD ;
+	feet = feet % FEET_PER_YARD ;
+
+	//---- display results
+	cout << totalInches << " inches is " << yards 
+		<< " yards, " << feet << " feet, and " 
+		<< inches << " inches." << endl;
+
+	//---- end program
+	return 0;
+}
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(void) {
+	string name("Masamba Macleod");
+
+	//--- find location of blank in name ---
+	int blankLocation = name.find(" ");
+
+	// --- extract first and last names ---
+	string firstName = name.substr(0, blankLocation);
+	int lengthOfLastName = name.length() - (blankLocation + 1);
+	string lastName = name.substr(blankLocation + 1, lengthOfLastName);
+
+	// --- display names separately ---
+	cout << "First name: " << firstName 
+		<< " (" << firstName.length() 
+		<< " letters)" <<endl;
+	cout << "Last name: " << lastName 
+		<< " (" << lastName.length() 
+		<< " letters)" <<endl;
+	cout << "Full name: " << name << endl;
+
+	// --- end program ---
+	return 0;
+} 
+//---------------------------------------
+// This code doesn't *really* do anything
+// but it illustrates how to use and, or, not,
+// bool type variables, while loops, and if conditions
+// for more forgiving and permissive user interaction.
+//---------------------------------------
+// Students are free to use this code in their
+// assignments, but should cite this program as
+// a source of "inspirational material".
+
+
+#include<iostream>
+#include<ciso646>
+#include<string>
+using namespace std;
+
+int main(void) {
+
+	const int MIN = 10;
+	const int MAX = 100;
+
+	bool loopAgain = true; // controls running entire program over and over
+
+	while (loopAgain) { // primary loop to repeat program over and over
+
+		bool gettingInput = true;
+
+		int input;
+
+		while (gettingInput) { // repeatedly asks for input until input is valid
+			   cout << "Enter a number between " << MIN
+				  << " and " << MAX << ": ";
+			   cin >> input;
+
+			   // --- don't ask again if input is in range
+			   gettingInput = not ( ( input > MIN ) and ( input < MAX ) );
+
+			   if (gettingInput) { // alert user to bad input
+				  cout << "User input not in range! ";
+			   }
+			}
+
+		// confirm input
+		cout << "OK, your input is " << input << "." << endl;
+
+	    // check is user wants to do it again
+	    bool badAnswer = true;
+		bool yesAnswer;
+
+		while (badAnswer) { // ask user to repeat the program
+
+		  cout << "Do you want to continue? (y/n) " << endl;
+		  string continueAnswer;
+		  cin >> continueAnswer;
+
+		  //--- did user answer "y" or "n" ? ---
+		  yesAnswer = ( continueAnswer == "Y" ) or (continueAnswer == "y");
+		  bool noAnswer = ( continueAnswer == "N" ) or (continueAnswer == "n");
+
+		  badAnswer = not (yesAnswer or noAnswer); // user didn't answer with "y" or "n"
+		}
+	     loopAgain = yesAnswer; // only loop again if user answers "y" 
+	}
+
+	// ------- shut down -------
+	cout << "Hope you had fun!" << endl;
+    return 0;
+}
+// This program doesn't really do anything
+// It's just here to be a pain.
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(void) {
+	int m, n, o, p;
+	double x = 3.4,
+		y = 4.5,
+		z = x * y;
+
+	string name1("joe"),
+		name2("moe"),
+		name3("zoe"),
+		name4("cloe");
+
+	m = 2;
+	n = m * m + 2;
+	o = m * n + 2;
+	p = m * n * o + 2;
+
+	cout << "m = " << m << endl
+		<< "n = " << n << endl
+		<< "o = " << o << endl
+		<< "p = " << p << endl << endl
+		<< "x = " << x << endl
+		<< "y = " << y << endl
+		<< "z = " << z<< endl << endl
+		<< "name1 = " << name1 << endl
+		<< "name2 = " << name2 << endl
+		<< "name3 = " << name3 << endl
+		<< "name4 = " << name4 << endl << endl;
+
+	return 0;
+}
